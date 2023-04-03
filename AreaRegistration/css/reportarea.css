@@ -1,0 +1,91 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 128);
+    background: linear-gradient(135deg, rgba(0, 0, 128, 1) 0%, rgba(0, 0, 0, 1) 56%);
+
+    box-shadow: #ffa500;
+}
+
+
+.body {
+    min-height: 100vh;
+}
+
+.report {
+    display: flex;
+    justify-content: center;
+}
+
+.cr {
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(138, 113, 235);
+    border: 1px solid #ff0000;
+    margin-left: 1px;
+}
+
+.areatable {
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.areath {
+    background-color: gray;
+    color: white;
+}
+
+.areath,
+.areatd {
+    padding: .8rem;
+    font-size: 1.0rem;
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .areatable {
+        text-align: center;
+    }
+
+    .areathead {
+        display: none;
+    }
+
+    .areatd {
+        display: block;
+        text-align: center;
+        margin: 15px;
+    }
+
+    .areatd:first-child {
+        background-color: #333;
+        color: #fff;
+        justify-content: center;
+
+    }
+
+    .areatd:nth-child(1)::before {
+        content: "No. : "
+    }
+
+    .areatd:nth-child(2)::before {
+        content: "State : "
+    }
+
+
+    .areatd:nth-child(3)::before {
+        content: "City : "
+    }
+
+
+    .areatd:nth-child(4)::before {
+        content: "Area : "
+    }
+
+    .areatd:nth-child(5)::before {
+        content: ""
+    }
+
+}

@@ -1,0 +1,51 @@
+.container{
+    justify-content: center;
+    align-items: center;
+ background: rgb(0,0,128); 
+ background: linear-gradient(135deg, rgba(0,0,128,1) 0%, rgba(0,0,0,1) 56%);
+ box-shadow: #ffa500;
+ 
+}
+
+.contain{
+    justify-content: center;
+    align-items: center;
+ background: rgb(0,0,128); 
+ background: linear-gradient(135deg, rgba(0,0,128,1) 0%, rgba(0,0,0,1) 56%);
+ box-shadow: #ffa500;
+ 
+}
+
+
+h1{
+    text-shadow: 2px 2px 2px #ffa500, 0px 0px 2px #ffa500;
+    font-weight: bold;
+
+}
+
+h2{
+    text-shadow: 2px 2px 2px #ffa500, 0px 0px 2px #ffa500;
+    font-weight: bold;
+
+}
+
+
+
+
+label{
+      text-shadow: 1px 1px 2px #ffa500, 0px 0px 2px #ffa500;
+      font-weight: bold;
+}
+
+ input{
+    box-shadow: 2px 2px 4px #ffa500, 1px 1px 2px #ffa500;
+}
+
+button{
+    box-shadow: 2px 2px 4px #ffffff, 1px 1px 2px #ffffff;
+}
+
+select{
+    box-shadow: 2px 2px 4px #ffa500, 1px 1px 2px #ffa500;
+
+}

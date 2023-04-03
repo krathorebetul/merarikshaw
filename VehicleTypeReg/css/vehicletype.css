@@ -1,0 +1,83 @@
+
+.container{
+    justify-content: center;
+    align-items: center;
+ background: rgb(0,0,128);
+background: linear-gradient(135deg, rgba(0,0,128,1) 0%, rgba(0,0,0,1) 56%);
+
+box-shadow: #ffa500;
+ 
+}
+
+body
+{
+    min-height: 100vh; 
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+}
+.cr{
+   
+    display: flex;
+    justify-content: center;
+    background-color:rgb(138, 113, 235);
+    border: 1px solid #ff0000;
+    margin-left: 1px; 
+  }
+.vttable
+{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.vtth
+{
+    background-color: #333;
+    color: #000000;
+}
+
+.vtth, .vttd
+{
+    padding: .8rem;
+    font-size: 1.0rem;
+}
+
+@media screen and (max-width:1024px){
+    
+    
+    .vttable{
+           text-align: center;
+    }
+    .vtthead{
+           display: none;
+    }
+    .vttd{
+          display: block;
+          text-align: center;
+          margin: 15px;
+    }
+
+    .vttd:first-child{
+        background-color: gray;
+        color: #fff; 
+        justify-content: center;
+     
+    }
+    .vttd:nth-child(1)::before{
+        content:" No. : "
+    }
+
+    .vttd:nth-child(2)::before{
+        content:"Vehicle : "
+    } 
+
+    
+    .vttd:nth-child(3)::before{
+        content:""
+    }
+
+    
+
+}

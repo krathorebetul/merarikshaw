@@ -1,0 +1,80 @@
+.container{
+    justify-content: center;
+    align-items: center;
+ background: rgb(0,0,128);
+background: linear-gradient(135deg, rgba(0,0,128,1) 0%, rgba(0,0,0,1) 56%);
+
+box-shadow: #ffa500;
+} 
+
+body
+{
+    min-height: 100vh; 
+}
+
+.report{
+    display: flex;
+    justify-content: center;
+}
+.cr{
+   
+    display: flex;
+    justify-content: center;
+    background-color:rgb(138, 113, 235);
+    border: 1px solid #ff0000;
+    margin-left: 1px; 
+  }
+.statetable
+{
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.stateth
+{
+    background-color: #333;
+    color: #000000;
+}
+
+.stateth, .statetd
+{
+    padding: .8rem;
+    font-size: 1.0rem;
+   
+}
+
+@media screen and (max-width:1024px){
+    
+    
+    .statetable{
+           text-align: center;
+    }
+    .statethead{
+           display: none;
+    }
+    .statetd{
+          display: block;
+          text-align: center;
+          margin: 15px;
+    }
+
+    .statetd:first-child{
+        background-color: gray;
+        color: white; 
+        justify-content: center;
+     
+    }
+    .statetd:nth-child(1)::before{
+        content:"No. : "
+    }
+
+    .statetd:nth-child(2)::before{
+        content:"State : "
+    }
+
+    
+    .statetd:nth-child(3)::before{
+        content:""
+    }
+
+}
